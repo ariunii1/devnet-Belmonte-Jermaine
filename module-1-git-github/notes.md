@@ -24,8 +24,7 @@
 
 ## Walking through what I did
 
-[Describe, step by step, a real branch → commit → push → PR you did. Include the actual commands you used.]
-[Just like in this project. I changed to another branch from main, (git branch Module1, git switch Module1), ]
+[Just like in this project. I changed to another branch from main, (git branch Module1, git switch Module1), and then commit(git add ., git commit), and then pushed so i can pull it from the main (git push --set-upstream origin Module1)]
 
 ```
 # paste your actual commands here
@@ -35,7 +34,7 @@
 
 ## A mistake I made (or one I want to avoid)
 
-[What tripped you up? A confusing error message, committing to the wrong branch, a merge conflict — explain it so a classmate reading this avoids the same mistake.]
+[I tried pushing without adding. Because git add is basically adding the things you want to commit before committing]
 
 ---
 
