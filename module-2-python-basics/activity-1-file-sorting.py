@@ -6,18 +6,16 @@ Date: [9/27/2026]
 ============================================
 WHAT DID YOU BUILD? (explain in your own words)
 ============================================
-[Paste your working script below first, then come back and explain
-it here: what does your script do, and what rule did you use to
-sort the files? e.g. by extension, by name, by date, etc.]
+[I made a script that sorts files based on their extentions]
 
 
 ============================================
 KEY VOCABULARY
 ============================================
-- os module:
-- shutil module:
-- file path:
-- directory:
+- os module: this can make your program communicate with your pc
+- shutil module: this is the tool that actually moves or copies the files around.
+- file path: exact location of files in your files. 
+- directory: in other words, folder
 (add more as needed)
 
 
@@ -30,16 +28,28 @@ Paste the code you already wrote for this activity below.
 import os
 import shutil
 
-# --- paste your existing code here ---
+source_folder = "Downloads_Folder"
+images_folder = "Images_Folder"
+
+if not os.path.exists(images_folder):
+    os.makedirs(images_folder)
+
+for filename in os.listdir(source_folder):
+    
+    if filename.endswith(".jpg") or filename.endswith(".png"):
+        
+        old_path = os.path.join(source_folder, filename)
+        new_path = os.path.join(images_folder, filename)
+        
+        shutil.move(old_path, new_path)
+        print(filename + " was moved to Images!")
 
 
 """
 ============================================
 A MISTAKE I MADE (or one I want to avoid)
 ============================================
-[what tripped you up while building this? e.g. a path that didn't
-exist, a file that got overwritten, something that didn't work the
-way you expected at first]
+[I tried moving a fiel to a folder that didnt exist. so the code didnt work]
 
 
 ============================================
