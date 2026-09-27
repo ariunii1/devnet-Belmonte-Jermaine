@@ -1,22 +1,22 @@
 """
 Module 2 — Lesson 2: Control Flow (if / elif / else)
-Student: [your name]
-Date: [date]
+Student: [Belmonte, Jermaine Christyles A.]
+Date: [9/27/2026]
 
 ============================================
 WHAT IS THIS TOPIC? (explain it like you're
 teaching a friend who's never coded before)
 ============================================
-[write your own explanation here]
+[These are how your code handles optional statements, like if hindi umagree sa una, what will it do]
 
 
 ============================================
 KEY VOCABULARY
 ============================================
-- condition:
-- if / elif / else:
-- comparison operator:
-- boolean expression:
+- condition: a rule/condition that you can check if it is true or false
+- if / elif / else: if is the first condition, elif if "if" was false, else if both if and elif were false
+- comparison operator: just like math, it compares two things, < > =
+- boolean expression: this answers true or false
 (add more as needed)
 
 
@@ -27,15 +27,23 @@ Write at least one working example below that you
 came up with yourself — not copied from class.
 """
 
-# --- your code example goes here ---
+#budget = 150
+#CoffeePrice = 145
+#yumburger_price = 40
+
+#if budget >= CoffeePrice:
+    #print("You have bought a coffee!")
+#elif budget >= yumburger_price:
+    #print("Your money is not enough for coffee, you have bought yumburger instead!")
+#else:
+    #print("Card declined bossing")
 
 
 """
 ============================================
 A MISTAKE I MADE (or one I want to avoid)
 ============================================
-[what's something confusing or easy to get wrong
-about this topic?]
+[At first i thought else worked for else if, hindi pala hehe]
 
 
 ============================================
